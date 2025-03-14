@@ -217,7 +217,6 @@ namespace Homework5
                 }
             }
             Console.WriteLine($"Available bookcount:{CountOfAvailableBooks}   Borrowed bookcount:{CountOfBorrowedBooks}");
-
         }
     }
 }
