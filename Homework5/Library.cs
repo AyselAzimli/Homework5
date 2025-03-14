@@ -21,9 +21,7 @@ namespace Homework5
                 Console.WriteLine("Invalid or duplicate Book ID.");
                 return;
             }
-
             bool bookExists = false; 
-
             foreach (var book in books) 
             {
                 if (book.BookId == bookID) 
@@ -53,13 +51,11 @@ namespace Homework5
         public void ViewBooks()
         {
             Console.WriteLine($"{"ID",-4}{"Title",-20} {"Author",-20} {"Availability",-15}");
-
             foreach (var book in books)
             {
                 Console.WriteLine(new string('-', 60));
                 Console.WriteLine($"{book.BookId,-4}{book.Title,-20} {book.Author,-20} {book.IsAvailable,-15}");
                 Console.WriteLine(new string('-', 60));
-
             }
         }
         public void FindById()
@@ -82,9 +78,7 @@ namespace Homework5
             if (!IsFound)
             {
                 Console.WriteLine("Book was not found");
-
             }
-
         }
         public void BorrowBook()
         {
@@ -112,10 +106,8 @@ namespace Homework5
                 {
                     Console.WriteLine("Book with this ID does not exists");
                 }
-
                 Console.WriteLine("Book not found.");
             }
-
         }
         public void ReturnBook()
         {
@@ -168,7 +160,6 @@ namespace Homework5
             {
                 Console.WriteLine("Book with this ID does not exists");
             }
-
         }
         ////Additional features :)
         public void SearchPartly()
